@@ -1,0 +1,6 @@
+:root{
+--duration-instant:100ms;/* @kind other */--duration-fast:160ms;/* @kind other */--duration-base:220ms;/* @kind other */--duration-slow:340ms;/* @kind other */--duration-slower:480ms;/* @kind other */
+--ease-standard:cubic-bezier(.4,0,.2,1);/* @kind other */--ease-out:cubic-bezier(0,0,.2,1);/* @kind other */--ease-in:cubic-bezier(.4,0,1,1);/* @kind other */--ease-emphasized:cubic-bezier(.2,0,0,1);/* @kind other */
+--z-dropdown:1000;/* @kind other */--z-sticky:1100;/* @kind other */--z-overlay:1200;/* @kind other */--z-modal:1300;/* @kind other */--z-toast:1400;/* @kind other */--z-tooltip:1500;/* @kind other */
+}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.001ms!important;transition-duration:.001ms!important;}}

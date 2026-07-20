@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sattva Energies — Rooftop Solar Installation in Gujarat</title>
+<meta name="description" content="Sattva Energies is Gujarat's trusted rooftop solar installation partner for homes, businesses, and industry — with PM Surya Ghar subsidy assistance up to ₹78,000, from consultation to installation and maintenance." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="stylesheet" href="/site.css" />
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script>document.addEventListener("DOMContentLoaded",function(){var s=document.createElement("script");s.type="module";s.src="/hero3d.js";document.head.appendChild(s);});</script>
+</head>
+<body>
+<div id="root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="/images.js"></script>
+<script type="text/babel" src="/SiteChrome.jsx"></script>
+<script type="text/babel" src="/Home1.jsx"></script>
+<script type="text/babel" src="/Home2.jsx"></script>
+<script type="text/babel" src="/BrochureSections.jsx"></script>
+<script type="text/babel">
+const { SiteNav, SiteFooter, LucideIcon, Reveal, Hero, Overview, Products, Solutions, Projects, Technology, Industries, CalculatorBand, Sustainability, Certifications, Testimonials, CaseStudies, Blogs, FAQ, SubsidyBand, WhyChoose, InstallProcess, TrustedBrands, QualityComponents, DocumentsFinancing, WarrantySupport } = window;
+
+function ContactBand(){
+  const [sent,setSent]=React.useState(false);
+  return (
+    <section id="contact" style={{padding:'clamp(64px,8vw,100px) clamp(20px,4vw,44px)',background:'var(--color-bg-sunken)'}}>
+      <Reveal style={{...window.SE_WRAP,display:'grid',gridTemplateColumns:'1fr 1fr',gap:'clamp(32px,4vw,64px)',alignItems:'center'}} className="se-2col">
+        <div>
+          <div style={window.SE_EYEBROW}>Get started</div>
+          <h2 style={{...window.SE_H2,margin:'13px 0 16px'}}>Let's size your rooftop.</h2>
+          <p style={{fontSize:17,lineHeight:1.65,color:'var(--color-text-secondary)',margin:'0 0 28px',maxWidth:440}}>Tell us about your rooftop and electricity bill. A Sattva engineer will come back with a modelled proposal — generation, savings, payback, and your subsidy eligibility — within two working days.</p>
+          {[['phone','Talk to Sattva Energies','+91 88664 26625'],['mail','Email us','hello@sattvaenergies.in'],['map-pin','Head office','Karelibaug, Vadodara 390018']].map(([ic,t,v])=>(
+            <div key={t} style={{display:'flex',alignItems:'center',gap:14,marginBottom:16}}>
+              <span style={{width:44,height:44,borderRadius:11,background:'var(--color-brand-primary-subtle)',display:'flex',alignItems:'center',justifyContent:'center',flexShrink:0}}><LucideIcon name={ic} size={19}/></span>
+              <div><div style={{fontSize:13,color:'var(--color-text-tertiary)'}}>{t}</div><div style={{fontWeight:600,fontSize:15.5,color:'var(--color-text-primary)'}}>{v}</div></div>
+            </div>
+          ))}
+        </div>
+        <form onSubmit={(e)=>{e.preventDefault();setSent(true);}} style={{background:'var(--color-bg-surface)',borderRadius:20,padding:'clamp(24px,3vw,36px)',border:'1px solid var(--color-border-subtle)',boxShadow:'var(--shadow-md)'}}>
+          {sent ? (
+            <div style={{textAlign:'center',padding:'40px 0'}}>
+              <div style={{width:64,height:64,borderRadius:'50%',background:'var(--color-brand-primary-subtle)',display:'flex',alignItems:'center',justifyContent:'center',margin:'0 auto 20px'}}><LucideIcon name="check" size={30}/></div>
+              <div style={{fontFamily:'var(--font-display)',fontWeight:700,fontSize:22,color:'var(--color-text-primary)',marginBottom:8}}>Thank you.</div>
+              <p style={{fontSize:15,color:'var(--color-text-secondary)',margin:0}}>Your enquiry is in. An engineer will reach out within two working days.</p>
+            </div>
+          ) : (<>
+            <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:14,marginBottom:14}}>
+              <input className="se-input" placeholder="Full name" required/>
+              <input className="se-input" placeholder="Phone" required/>
+            </div>
+            <input className="se-input" type="email" placeholder="Work email" required style={{marginBottom:14}}/>
+            <select className="se-input" style={{marginBottom:14,appearance:'none'}} defaultValue="">
+              <option value="" disabled>I'm interested in…</option>
+              <option>Residential rooftop solar</option><option>Commercial rooftop solar</option><option>Industrial rooftop solar</option><option>Solar consultation</option><option>Solar maintenance</option><option>Government subsidy assistance</option>
+            </select>
+            <textarea className="se-input" placeholder="Tell us about your site, roof, or average monthly bill" rows="4" style={{marginBottom:18,resize:'vertical'}}></textarea>
+            <button type="submit" className="se-btn-primary" style={{width:'100%',padding:'15px',borderRadius:'var(--radius-pill)',background:'var(--color-brand-primary)',color:'#fff',border:'none',fontWeight:600,fontSize:16,fontFamily:'var(--font-body)',cursor:'pointer'}}>Request my proposal</button>
+            <p style={{fontSize:12.5,color:'var(--color-text-tertiary)',textAlign:'center',margin:'14px 0 0'}}>We reply within 2 working days. No spam, ever.</p>
+          </>)}
+        </form>
+      </Reveal>
+    </section>
+  );
+}
+
+function App(){
+  return (<>
+    <SiteNav active="Home"/>
+    <main>
+      <Hero/><Overview/><WhyChoose/><Products/><TrustedBrands/><QualityComponents/><Solutions/><SubsidyBand/><InstallProcess/><DocumentsFinancing/><Projects/><Technology/><Industries/><CalculatorBand/><WarrantySupport/><Sustainability/><Certifications/><Testimonials/><CaseStudies/><Blogs/><FAQ/><ContactBand/>
+    </main>
+    <SiteFooter/>
+  </>);
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script>
+</body>
+</html>

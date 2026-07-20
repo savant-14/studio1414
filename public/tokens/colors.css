@@ -1,0 +1,99 @@
+:root{
+/* Brand — Forest (primary, eco/trust) */
+--forest-50:#f1f8f4;--forest-100:#dcefe3;--forest-200:#b7dfc8;--forest-300:#8bc9a8;--forest-400:#5aac82;--forest-500:#398f63;--forest-600:#26744e;--forest-700:#1f5c40;--forest-800:#1a4a34;--forest-900:#153c2a;--forest-950:#0b241a;
+/* Brand — Solar (accent, energy/optimism) */
+--solar-50:#fffaeb;--solar-100:#fff0c2;--solar-200:#ffe088;--solar-300:#ffcc4d;--solar-400:#ffb800;--solar-500:#f2a600;--solar-600:#d68a00;--solar-700:#a86b00;--solar-800:#7a4e00;--solar-900:#5c3a00;
+/* Energy Orange (secondary CTA / warmth) */
+--ember-400:#ff8a52;--ember-500:#ff6b35;--ember-600:#e2501d;--ember-700:#b83c14;
+/* Deep Navy (dark surfaces, headers, night mode) */
+--navy-500:#2c4a6e;--navy-600:#1f374f;--navy-700:#152941;--navy-800:#0f1e30;--navy-900:#0a1522;--navy-950:#060d16;
+/* Sky (info, secondary interactive) */
+--sky-400:#5fb4ec;--sky-500:#3a9be0;--sky-600:#2680c2;--sky-700:#1d6499;
+/* Neutrals — cool-green tinted gray scale */
+--gray-0:#ffffff;--gray-25:#fbfcfb;--gray-50:#f5f7f6;--gray-100:#eceeed;--gray-200:#dde1df;--gray-300:#c4cac7;--gray-400:#9aa39e;--gray-500:#727b76;--gray-600:#565f5a;--gray-700:#40473f;--gray-800:#2b322e;--gray-900:#1a201c;--gray-950:#0e120f;
+--black:#0a0d0b;
+
+/* Semantic — light mode */
+--color-bg-canvas:var(--gray-25);
+--color-bg-surface:var(--gray-0);
+--color-bg-surface-raised:var(--gray-0);
+--color-bg-sunken:var(--gray-50);
+--color-bg-inverse:var(--navy-900);
+--color-border-subtle:var(--gray-200);
+--color-border-default:var(--gray-300);
+--color-border-strong:var(--gray-400);
+--color-text-primary:var(--gray-900);
+--color-text-secondary:var(--gray-600);
+--color-text-tertiary:var(--gray-500);
+--color-text-inverse:var(--gray-0);
+--color-text-on-brand:var(--gray-0);
+--color-text-disabled:var(--gray-400);
+
+--color-brand-primary:var(--forest-600);
+--color-brand-primary-hover:var(--forest-700);
+--color-brand-primary-active:var(--forest-800);
+--color-brand-primary-subtle:var(--forest-50);
+--color-brand-accent:var(--solar-400);
+--color-brand-accent-hover:var(--solar-500);
+--color-brand-accent-subtle:var(--solar-50);
+
+--color-interactive-primary:var(--forest-600);
+--color-interactive-primary-hover:var(--forest-700);
+--color-interactive-link:var(--sky-600);
+--color-interactive-link-hover:var(--sky-700);
+--color-focus-ring:var(--sky-500);
+
+--color-success:var(--forest-600);
+--color-success-subtle:var(--forest-50);
+--color-warning:var(--solar-500);
+--color-warning-subtle:var(--solar-50);
+--color-danger:#c4392f;
+--color-danger-subtle:#fdeeed;
+--color-info:var(--sky-600);
+--color-info-subtle:#eaf6fd;
+
+/* Data viz */
+--chart-1:var(--forest-500);
+--chart-2:var(--solar-400);
+--chart-3:var(--sky-500);
+--chart-4:var(--ember-500);
+--chart-5:var(--navy-500);
+--chart-6:var(--gray-400);
+
+/* Gradients — used sparingly, hero/energy-flow only */
+--gradient-solar-flow:linear-gradient(135deg,var(--forest-600) 0%,var(--forest-500) 45%,var(--solar-400) 100%);
+--gradient-navy-depth:linear-gradient(180deg,var(--navy-700) 0%,var(--navy-900) 100%);
+--gradient-mesh-subtle:radial-gradient(circle at 20% 20%,rgba(38,116,78,.10),transparent 55%),radial-gradient(circle at 80% 70%,rgba(242,166,0,.08),transparent 50%);/* @kind other */
+
+/* Opacity scale */
+--opacity-disabled:.45;/* @kind other */--opacity-hover-overlay:.06;/* @kind other */--opacity-active-overlay:.10;/* @kind other */--opacity-scrim:.55;/* @kind other */
+}
+[data-theme="dark"]{
+--color-bg-canvas:var(--navy-950);
+--color-bg-surface:var(--navy-900);
+--color-bg-surface-raised:var(--navy-800);
+--color-bg-sunken:var(--navy-950);
+--color-bg-inverse:var(--gray-0);
+--color-border-subtle:rgba(255,255,255,.08);
+--color-border-default:rgba(255,255,255,.14);
+--color-border-strong:rgba(255,255,255,.24);
+--color-text-primary:var(--gray-50);
+--color-text-secondary:var(--gray-300);
+--color-text-tertiary:var(--gray-400);
+--color-text-inverse:var(--navy-900);
+--color-text-disabled:var(--gray-600);
+--color-brand-primary:var(--forest-400);
+--color-brand-primary-hover:var(--forest-300);
+--color-brand-primary-active:var(--forest-500);
+--color-brand-primary-subtle:rgba(90,172,130,.14);
+--color-brand-accent:var(--solar-400);
+--color-brand-accent-subtle:rgba(255,184,0,.12);
+--color-interactive-primary:var(--forest-400);
+--color-interactive-primary-hover:var(--forest-300);
+--color-interactive-link:var(--sky-400);
+--color-interactive-link-hover:var(--sky-500);
+--color-success:var(--forest-400);--color-success-subtle:rgba(90,172,130,.14);
+--color-warning:var(--solar-400);--color-warning-subtle:rgba(255,184,0,.12);
+--color-danger:#e2685f;--color-danger-subtle:rgba(226,80,29,.14);
+--color-info:var(--sky-400);--color-info-subtle:rgba(58,155,224,.14);
+}

@@ -1,0 +1,4 @@
+:root{
+--radius-xs:6px;--radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-xl:24px;--radius-2xl:32px;--radius-pill:999px;--radius-full:50%;
+--border-hairline:1px;--border-default:1px;--border-thick:1.5px;
+}
